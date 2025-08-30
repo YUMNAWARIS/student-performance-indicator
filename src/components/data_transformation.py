@@ -56,8 +56,7 @@ class DataTransformation:
                 "Sleep_Hours", 
                 "Previous_Scores", 
                 "Tutoring_Sessions",
-                "Physical_Activity", 
-                "Exam_Score"
+                "Physical_Activity"
             ]
             categorical_columns = [
                 "Gender",
