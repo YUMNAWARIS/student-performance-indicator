@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from src.exception import CustomException
 from src.components.data_transformation import DataTransformation
 import sys
+from src.components.model_trainer import ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
@@ -45,3 +46,6 @@ if __name__=="__main__":
 
     print("Train array: ", train_arr)
     print("Test array: ", test_arr)
+
+    modeltrainer = ModelTrainer()
+    print(modeltrainer.initiate_model_trainer(train_arr, test_arr))
